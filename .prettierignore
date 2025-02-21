@@ -1,0 +1,27 @@
+**/.git
+**/.svn
+**/.hg
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
+build
+coverage
+
+# Node dependencies
+.eslintcache
+node_modules
+
+# Logs
+logs
+*.log
+
+# Misc
+.DS_Store
+.fleet
+.idea
+
+

@@ -1,0 +1,93 @@
+{
+	"name": "nuxt-app",
+	"version": "v0.5.1",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview",
+		"postinstall": "nuxt prepare",
+		"prepare": "husky"
+	},
+	"dependencies": {
+		"@dargmuesli/nuxt-cookie-control": "^8.4.2",
+		"@formkit/auto-animate": "^0.8.2",
+		"@nuxt/fonts": "^0.7.1",
+		"@pinia/nuxt": "^0.5.1",
+		"@shadcn/ui": "^0.0.4",
+		"@tanstack/vue-table": "^8.19.3",
+		"@vee-validate/zod": "^4.13.2",
+		"@vueuse/core": "^10.11.0",
+		"@vueuse/nuxt": "^10.11.0",
+		"class-variance-authority": "^0.7.0",
+		"clsx": "^2.1.1",
+		"lucide-vue-next": "^0.395.0",
+		"nuxt": "^3.12.1",
+		"ohmyfetch": "^0.4.21",
+		"pinia": "^2.1.7",
+		"postcss": "^8.4.39",
+		"radix-vue": "^1.8.3",
+		"shadcn-nuxt": "^0.10.4",
+		"tailwind-merge": "^2.3.0",
+		"tailwindcss-animate": "^1.0.7",
+		"uuid": "^10.0.0",
+		"vaul-vue": "^0.2.0",
+		"vee-validate": "^4.13.2",
+		"vue-router": "^4.3.3",
+		"vue-sonner": "^1.1.4",
+		"zod": "^3.23.8"
+	},
+	"devDependencies": {
+		"@iconify-json/radix-icons": "^1.1.14",
+		"@iconify/vue": "^4.1.2",
+		"@nuxt/eslint": "^0.3.13",
+		"@nuxtjs/tailwindcss": "^6.12.0",
+		"@types/lodash.debounce": "^4.0.9",
+		"@types/luxon": "^3.4.2",
+		"@types/uuid": "^10.0.0",
+		"eslint": "^9.5.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-prettier": "^5.1.3",
+		"eslint-plugin-tailwindcss": "^3.17.4",
+		"eslint-plugin-vue": "^9.26.0",
+		"husky": "^9.0.11",
+		"lint-staged": "^15.2.7",
+		"prettier": "^3.3.2",
+		"stylelint": "^16.6.1",
+		"stylelint-config-idiomatic-order": "^10.0.0",
+		"stylelint-config-property-sort-order-smacss": "^10.0.0",
+		"stylelint-config-recess-order": "^5.0.1",
+		"stylelint-config-recommended": "^14.0.1",
+		"stylelint-config-recommended-scss": "^14.0.0",
+		"stylelint-config-recommended-vue": "^1.5.0",
+		"stylelint-order": "^6.0.4",
+		"stylelint-prettier": "^5.0.0",
+		"stylelint-scss": "^6.3.2",
+		"typescript": "^5.4.5"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "npx lint-staged --allow-empty"
+		}
+	},
+	"lint-staged": {
+		"*.{js,ts,cjs,mjs}": [
+			"prettier --write --ignore-unknown",
+			"eslint --fix"
+		],
+		"*.{html,jsx,tsx,vue}": [
+			"prettier --write --ignore-unknown",
+			"stylelint --fix --allow-empty-input",
+			"eslint --fix"
+		],
+		"*.{css,scss,less,sass}": [
+			"stylelint --fix --allow-empty-input",
+			"prettier --write --ignore-unknown"
+		],
+		"*.{md,json}": [
+			"prettier --write --ignore-unknown"
+		]
+	}
+}

@@ -1,0 +1,45 @@
+**/.git
+**/.svn
+**/.hg
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+public
+server
+stores
+composables
+dist
+build
+coverage
+utils
+plugins
+middleware
+lib
+# Node dependencies
+node_modules
+
+# Logs
+logs
+*.log
+
+# Misc
+.DS_Store
+.fleet
+.idea
+.vscode
+.eslintcache
+.editorconfig
+.prettierignore
+.gitignore
+.stylelintignore
+.prettierrc
+.nuxtconfig
+**/*.js
+**/*.ts
+**/*.json
+**/*.md
+**/.*ignore
+**/.*rc

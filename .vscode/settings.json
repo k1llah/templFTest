@@ -1,0 +1,16 @@
+{
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit",
+		"source.fixAll.stylelint": "explicit"
+	},
+
+	"eslint.useFlatConfig": true,
+
+	"css.format.enable": false,
+	"css.validate": false,
+	"scss.validate": false,
+	"scss.format.enable": false,
+	"stylelint.validate": ["css", "postcss", "scss", "less", "html", "sass", "vue"]
+}
